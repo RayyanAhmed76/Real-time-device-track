@@ -1,7 +1,5 @@
 const socket = io();
 
-console.log("hey");
-
 if (navigator.geolocation) {
   navigator.geolocation.watchPosition(
     (position) => {

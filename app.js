@@ -1,6 +1,7 @@
 const http = require("http");
 const express = require("express");
 const path = require("path");
+const PORT = process.env.PORT || 9000;
 
 const app = express();
 
@@ -25,4 +26,4 @@ app.get("/", async (req, res) => {
   res.render("index");
 });
 
-server.listen(9000);
+server.listen(PORT);
