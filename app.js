@@ -18,7 +18,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
-    socket.emit("user-disconnected", socket.id);
+    io.emit("user-disconnected", socket.id);
   });
 });
 
